@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>SES web site</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Partie 2 : L'école, lieu de socialisation.</h1>
+
+    <div id="questionContainer">
+
+      <!-- 1 question -->
+      <div id="divquestion1">
+        <p id="question1">
+          Doc3) Quels sont les trois grands types d'apprentissage dispensés au cours de la socialisation
+          scolaire ?
+        </p>
+        <input type="text" id="answer1" class="form-control">
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer1">Envoyer</button>
+      </div>
+
+      <!-- 2 question -->
+      <div id="divquestion2" style="display: none;">
+        <p id="question2">
+          Doc3) Donnez des exemples de la socialisation scolaire explicite.
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="2checkbox1">
+          <label class="form-check-label" for="2checkbox1">
+            Des savoirs scolaires.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="2checkbox2">
+          <label class="form-check-label" for="2checkbox2">
+            L'apprentissage du respect.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="3" id="2checkbox3">
+          <label class="form-check-label" for="2checkbox3">
+            L'apprentissage de l'organisation dans le travail.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="4" id="2checkbox4">
+          <label class="form-check-label" for="2checkbox4">
+            L'apprentissage de la politesse.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="5" id="2checkbox5">
+          <label class="form-check-label" for="2checkbox5">
+            Des connaissances académiques.
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer2">Envoyer</button>
+      </div>
+
+      <!-- 3 question -->
+      <div id="divquestion3" style="display: none;">
+        <p id="question3">
+          Doc3) Donnez des exemples de la socialisation scolaire implicite.
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="3checkbox1">
+          <label class="form-check-label" for="3checkbox1">
+            L'apprentissage de l'organisation dans le travail.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="3checkbox2">
+          <label class="form-check-label" for="3checkbox2">
+            Des connaissances académiques.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="3" id="3checkbox3">
+          <label class="form-check-label" for="3checkbox3">
+            L'apprentissage du rapport au temps.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="4" id="3checkbox4">
+          <label class="form-check-label" for="3checkbox4">
+            L'apprentissage de la politesse.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="5" id="3checkbox5">
+          <label class="form-check-label" for="3checkbox5">
+            L'apprentissage du respect.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="6" id="3checkbox6">
+          <label class="form-check-label" for="3checkbox6">
+            Des savoirs scolaires.
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer3">Envoyer</button>
+      </div>
+
+      <!-- 4 question -->
+      <div id="divquestion4" style="display: none;">
+        <p id="question4">
+          Doc3) Selon vous, l'apprentissage du rapport au temps sert-il uniquement à l'école ?
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="4checkbox1">
+          <label class="form-check-label" for="4checkbox1">
+            Oui, il sert uniquement à l'environnement scolaire.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="4checkbox2">
+          <label class="form-check-label" for="4checkbox2">
+            Non, il est aussi essentiel dans la vie adulte.
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer4">Envoyer</button>
+      </div>
+
+      <!-- 5 question -->
+      <div id="divquestion5" style="display: none;">
+        <p id="question4">
+          Doc4) La socialisation scolaire est-elle réalisée spécifiquement par l'école ?
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="5checkbox1">
+          <label class="form-check-label" for="5checkbox1">
+            Oui la socialisation scolaire est réalisée spécifiquement par l'école.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="5checkbox2">
+          <label class="form-check-label" for="5checkbox2">
+            Non elle est aussi réalisée par toutes les instances de socialisation qu'on trouve à l'école. Exemple : le
+            groupe de pairs.
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer5">Envoyer</button>
+      </div>
+
+      <!-- 6 question -->
+      <div id="divquestion6" style="display: none;">
+        <p id="question6">
+          Doc4) Faites une phrase donnant la signification de la donnée entourée.
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="6checkbox1">
+          <label class="form-check-label" for="6checkbox1">
+            Selon l’institut Harris Interactive en 2016, 77% des personnes âgées de 18 et plus interrogées estiment que
+            l’objectif « Donner à tous les élèves les mêmes chances de réussite » devrait être un objectif prioritaire
+            pour le système éducatif français.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="6checkbox2">
+          <label class="form-check-label" for="6checkbox2">
+            Selon l'institut Harris Interactive, en 2016, la part des personnes âgées de 18 et plus interrogées
+            estimants que l’objectif « Donner à tous les élèves les mêmes chances de réussite » devrait être un objectif
+            prioritaire pour le système éducatif français est de 77 points de pourcentage.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="6checkbox3">
+          <label class="form-check-label" for="6checkbox3">
+            Selon l'institut Harris Interactive, en 2016, 77% des personnes âgées de 18 et plus interrogées estiment que
+            l’objectif « Apprendre aux élèves des connaissances et savoirs précis» devrait être un objectif prioritaire
+            pour le système éducatif français.
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer6">Envoyer</button>
+      </div>
+
+      <!-- 7 question -->
+      <div id="divquestion7" style="display: none;">
+        <p id="question7">Doc4) Donnez des exemples à partir du document qui montrent que les objectifs priorités cités
+          par les Français renvoient aux 3 types d'apprentissage de l'école (doc3).
+          <br>
+          <b> Rappel du document 3 : Le document 3 nous montre que l’école dispense 3 types d’apprentissage :
+            <br>
+            - Un apprentissage explicite : apprentissage des savoir.
+            <br>
+            - Un apprentissage implicite : des valeurs, des méthodes de travail, le rapport au temps, etc...
+            <br>
+            - Un apprentissage à la marge de l’institution : la tricherie, la socialisation sentimentale, etc... </b>
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="7checkbox1">
+          <label class="form-check-label" for="7checkbox1">
+            73% des Français interrogés considèrent que l’apprentissage de connaissances et savoirs devrait être un
+            objectif principal attendu du système éducatif.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="7checkbox2">
+          <label class="form-check-label" for="7checkbox2">
+            Parmi les objectifs prioritaires cités on trouve « appendre des valeurs morales » (71% des sondés) ou «
+            apprendre aux élèves à respecter les valeurs de la république (69% des sondés).
+
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="3" id="7checkbox3">
+          <label class="form-check-label" for="7checkbox3">
+            70% des Français attendent aussi prioritairement que l’école apprenne aux élèves des méthodes du travail et
+            d’organisation
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="4" id="7checkbox4">
+          <label class="form-check-label" for="7checkbox4">
+            99% des Français interrogés considèrent que utiliser son téléphone en classe devrait être un objectifs
+            principal attendu du système éducatif
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="5" id="7checkbox5">
+          <label class="form-check-label" for="7checkbox5">
+            5% des Français interrogés considèrent que l’apprentissage de connaissances et savoirs devrait être un
+            objectif principal attendu du système éducatif
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer7">Envoyer</button>
+      </div>
+
+      <!-- 8 question -->
+      <div id="divquestion8" style="display: none;">
+        <p id="question8">Doc4) Ce sondage confirme-t-il le document 3 ?
+          <b>
+            Rappel du document 3 : Le document 3 nous montre que l’école dispense 3 types d’apprentissage :
+            <br>
+            - Un apprentissage explicite : apprentissage des savoir.
+            <br>
+            - Un apprentissage implicite : des valeurs, des méthodes de travail, le rapport au temps, etc...
+            <br>
+            -Un apprentissage à la marge de l’institution : la tricherie, la socialisation sentimentale, etc...</b>
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="8checkbox1">
+          <label class="form-check-label" for="8checkbox1">
+            Oui, les données du sondage confirment bien le document 3 puisque l’école dispense majoritairement ceux que
+            les Français estime être des objectifs prioritaires attendus du système éducatif.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="8checkbox2">
+          <label class="form-check-label" for="8checkbox2">
+            Non, les données du sondage ne confirment pas le document 3.
+          </label>
+        </div>
+
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer8">Envoyer</button>
+      </div>
+
+      <!-- 9 question -->
+      <div id="divquestion9" style="display: none;">
+        <p id="question9">Doc4) Selon vous, la transmission des normes et des valeurs est-elle donc le but premier de
+          l'Ecole ?
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="9checkbox1">
+          <label class="form-check-label" for="9checkbox1">
+            Oui la transmission des normes et des valeurs est le but premier de l’École.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="9checkbox2">
+          <label class="form-check-label" for="9checkbox2">
+            Non la transmission des normes et des valeurs n'est pas le but premier de l’École.
+          </label>
+        </div>
+
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer9">Envoyer</button>
+      </div>
+
+      <!-- 10 question -->
+      <div id="divquestion10" style="display: none;">
+        <p id="question10">Doc4) On dit alors que l'école est un agent explicitement socialisateur ou implicitement
+          socialisateur.
+        </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="10checkbox1">
+          <label class="form-check-label" for="10checkbox1">
+            Un agent explicitement socialisateur = est un agent qui a pour but premier la transmission de norme et de
+            valeur.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="10checkbox2">
+          <label class="form-check-label" for="10checkbox2">
+            Un agent implicitement socialisateur = est un agent qui n'a pas pour but premier la transmission de norme et
+            de valeur.
+          </label>
+        </div>
+
+        <button type="button" class="btn btn-primary mt-2" id="submitAnswer10">Envoyer</button>
+      </div>
+
+      <!-- Redirection vers l'instance suivante -->
+      <div id="divredirection" style="display: none;">
+        <p id="redirection">Passer à l'instance suivante</p>
+        <a href="instance1.html" class="btn btn-outline-primary btn-lg">Instance 3</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="text-center text-lg-start fixed-bottom bg-primary p-2">
+    Projet pédagogique
+  </footer>
+
+  <script>
+    // Fonction pour afficher la question suivante et masquer la question actuelle
+    function showNextQuestion(currentQuestionId, nextQuestionId) {
+      document.getElementById(currentQuestionId).style.display = "none";
+      document.getElementById(nextQuestionId).style.display = "block";
+    }
+
+    // Événement pour la soumission de la première question
+    document.getElementById("submitAnswer1").addEventListener("click", function () {
+      const userAnswer = document.getElementById("answer1").value;
+
+      if (userAnswer == "un apprentissage de savoir explicite, un apprentissage de savoir implicite et un apprentissage soit aux marges de l'institution ou contre elle-même") {
+        showNextQuestion("divquestion1", "divquestion2");
+      } else {
+        alert("mauvase réponse")
+      }
+    });
+
+    // Événement pour la soumission de la deuxième question
+    document.getElementById("submitAnswer2").addEventListener("click", function () {
+      const checkbox1 = document.getElementById("2checkbox1");
+      const checkbox2 = document.getElementById("2checkbox2");
+      const checkbox3 = document.getElementById("2checkbox3");
+      const checkbox4 = document.getElementById("2checkbox4");
+      const checkbox5 = document.getElementById("2checkbox5");
+
+      if ((checkbox1.checked && checkbox5.checked) && (!checkbox3.checked && !checkbox4.checked && !checkbox2.checked)) {
+        showNextQuestion("divquestion2", "divquestion3");
+      } else {
+        alert("Mauvaise réponse");
+      }
+    });
+
+    // Événement pour la soumission de la troisième question
+    document.getElementById("submitAnswer3").addEventListener("click", function () {
+      const checkbox1 = document.getElementById("3checkbox1");
+      const checkbox2 = document.getElementById("3checkbox2");
+      const checkbox3 = document.getElementById("3checkbox3");
+      const checkbox4 = document.getElementById("3checkbox4");
+      const checkbox5 = document.getElementById("3checkbox5");
+      const checkbox6 = document.getElementById("3checkbox6");
+
+      if ((checkbox1.checked && checkbox3.checked && checkbox4.checked && checkbox5.checked) && (!checkbox2.checked && !checkbox6.checked)) {
+        showNextQuestion("divquestion3", "divquestion4");
+      } else {
+        alert("Mauvaise réponse");
+      }
+    });
+
+    // Événement pour la soumission de la quatrième question
+    document.getElementById("submitAnswer4").addEventListener("click", function () {
+      const checkbox1 = document.getElementById("4checkbox1");
+      const checkbox2 = document.getElementById("4checkbox2");
+
+      if ((checkbox2.checked) && (!checkbox1.checked)) {
+        showNextQuestion("divquestion4", "divquestion5");
+      } else {
+        alert("Mauvaise réponse");
+      }
+    });
+
+    // Événement pour la soumission de la cinquème question
+    document.getElementById("submitAnswer5").addEventListener("click", function () {
+      const checkbox1 = document.getElementById("5checkbox1");
+      const checkbox2 = document.getElementById("5checkbox2");
+
+      if ((checkbox2.checked) && (!checkbox1.checked)) {
+        showNextQuestion("divquestion5", "divquestion6");
+      } else {
+        alert("Mauvaise réponse");
+      }
+    });
+
+    // Événement pour la soumission de la sixième question
+    document.getElementById("submitAnswer6").addEventListener("click", function () {
+      const checkbox1 = document.getElementById("6checkbox1");
+      const checkbox2 = document.getElementById("6checkbox2");
+      const checkbox3 = document.getElementById("6checkbox3");
+
+      if ((checkbox1.checked) && (!checkbox2.checked && !checkbox3.checked)) {
+        showNextQuestion("divquestion6", "divquestion7");
+      } else {
+        alert("Mauvaise réponse");
+      }
+    });
+
+    // Événement pour la soumission de la septième question
+    document.getElementById("submitAnswer7").addEventListener("click", function () {
+      const checkbox1 = document.getElementById("7checkbox1");
+      const checkbox2 = document.getElementById("7checkbox2");
+      const checkbox3 = document.getElementById("7checkbox3");
+      const checkbox4 = document.getElementById("7checkbox4");
+      const checkbox5 = document.getElementById("7checkbox5");
+
+      if ((checkbox1.checked && checkbox2.checked && checkbox3.checked) && (!checkbox4.checked && !checkbox5.checked)) {
+        showNextQuestion("divquestion7", "divquestion8");
+      } else {
+        alert("Mauvaise réponse");
+      }
+    });
+
+    // Événement pour la soumission de la huitième question
+    document.getElementById("submitAnswer8").addEventListener("click", function () {
+      const checkbox1 = document.getElementById("8checkbox1");
+      const checkbox2 = document.getElementById("8checkbox2");
+
+      if ((checkbox1.checked) && (!checkbox2.checked)) {
+        showNextQuestion("divquestion8", "divquestion9");
+      } else {
+        alert("Mauvaise réponse");
+      }
+    });
+
+    // Événement pour la soumission de la neuvième question
+    document.getElementById("submitAnswer9").addEventListener("click", function () {
+      const checkbox1 = document.getElementById("9checkbox1");
+      const checkbox2 = document.getElementById("9checkbox2");
+
+      if ((checkbox1.checked) && (!checkbox2.checked)) {
+        showNextQuestion("divquestion9", "divquestion10");
+      } else {
+        alert("Mauvaise réponse");
+      }
+    });
+
+    // Événement pour la soumission de la dixième question
+    document.getElementById("submitAnswer10").addEventListener("click", function () {
+      const checkbox1 = document.getElementById("10checkbox1");
+      const checkbox2 = document.getElementById("10checkbox2");
+
+      if ((checkbox1.checked) && (!checkbox2.checked)) {
+        showNextQuestion("divquestion10", "divredirection");
+      } else {
+        alert("Mauvaise réponse");
+      }
+    });
+
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
