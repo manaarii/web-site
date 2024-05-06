@@ -51,7 +51,13 @@
             un impact sur leur façon de penser.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer1">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer1">Corriger</button>
+        <div id="nextQuestion1" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion1', 'divquestion2')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 2 question -->
@@ -71,7 +77,13 @@
             Non.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer2">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer2">Corriger</button>
+        <div id="nextQuestion2" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion2', 'divquestion3')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 3 question -->
@@ -98,7 +110,13 @@
             pourcentage.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer3">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer3">Corriger</button>
+        <div id="nextQuestion3" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion3', 'divquestion4')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 4 question -->
@@ -125,7 +143,13 @@
             38% des jeunes de 18-30 ans ont changé d'opinion sur un sujet.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer4">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer4">Corriger</button>
+        <div id="nextQuestion4" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion4', 'divquestion5')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 5 question -->
@@ -160,7 +184,13 @@
             <td><input type="checkbox" id="5checkboxl4c2"></td>
           </tr>
         </table>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer5">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer5">Corriger</button>
+        <div id="nextQuestion5" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion5', 'divquestion6')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 6 question -->
@@ -205,7 +235,13 @@
             <td><input type="checkbox" id="6checkboxl6c2"></td>
           </tr>
         </table>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer6">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer6">Corriger</button>
+        <div id="nextQuestion6" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion6', 'divquestion7')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 7 question -->
@@ -225,7 +261,13 @@
             Non les effets de la socialisation par les réseaux ne sont pas toujours positifs.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer7">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer7">Corriger</button>
+        <div id="nextQuestion7" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion7', 'divquestion8')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 8 question -->
@@ -245,7 +287,13 @@
             Non.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer8">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer8">Corriger</button>
+        <div id="nextQuestion8" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion8', 'divquestion9')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 9 question -->
@@ -268,16 +316,34 @@
             de valeur.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer9">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer9">Corriger</button>
+        <div id="nextQuestion9" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion9', 'divredirection')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- Redirection vers l'instance suivante -->
       <div id="divredirection" style="display: none;">
-        <p id="redirection"><b>Accueil</b></p>
-        <a href="index.html" class="btn btn-outline-primary btn-lg">Accueil</a>
+        <p id="redirection">Passer à l'instance suivante: <b>Partie 1 : La famille, la première instance de
+            socialisation.</b></p>
+        <a href="instance1.html" class="btn btn-outline-primary btn-lg">Instance 1</a>
       </div>
 
     </div>
+
+    <!-- Erreur -->
+    <div id="wrongAnswerMessage" class="alert alert-danger" style="display: none;">
+      Mauvaise réponse.
+    </div>
+
+    <!-- Validé -->
+    <div id="goodAnswerMessage" class="alert alert-success" style="display: none;">
+      Bonne réponse ! Copiez la dans le polycopié.
+    </div>
+
   </div>
 
   <!-- Bootstrap JS -->
@@ -293,6 +359,8 @@
     function showNextQuestion(currentQuestionId, nextQuestionId) {
       document.getElementById(currentQuestionId).style.display = "none";
       document.getElementById(nextQuestionId).style.display = "block";
+      document.getElementById("wrongAnswerMessage").style.display = "none";
+      document.getElementById("goodAnswerMessage").style.display = "none";
     }
 
     // Événement pour la soumission de la première question
@@ -303,9 +371,11 @@
 
       if ((checkbox1.checked)
         && (!checkbox2.checked && !checkbox3.checked)) {
-        showNextQuestion("divquestion1", "divquestion2");
+        document.getElementById("nextQuestion1").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -316,9 +386,11 @@
 
       if ((checkbox1.checked)
         && (!checkbox2.checked)) {
-        showNextQuestion("divquestion2", "divquestion3");
+        document.getElementById("nextQuestion2").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -329,9 +401,11 @@
       const checkbox3 = document.getElementById("3checkbox3");
 
       if ((checkbox1.checked) && (!checkbox2.checked && !checkbox3.checked)) {
-        showNextQuestion("divquestion3", "divquestion4");
+        document.getElementById("nextQuestion3").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("mauvase réponse")
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -342,9 +416,11 @@
       const checkbox3 = document.getElementById("4checkbox3");
 
       if ((checkbox3.checked) && (!checkbox2.checked && !checkbox1.checked)) {
-        showNextQuestion("divquestion4", "divquestion5");
+        document.getElementById("nextQuestion4").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -361,9 +437,11 @@
 
       if ((checkbox1.checked && checkbox3.checked && checkbox5.checked && checkbox8.checked)
         && (!checkbox2.checked && !checkbox4.checked && !checkbox6.checked && !checkbox7.checked)) {
-        showNextQuestion("divquestion5", "divquestion6");
+        document.getElementById("nextQuestion5").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -384,9 +462,11 @@
 
       if ((checkbox1.checked && checkbox3.checked && checkbox5.checked && checkbox8.checked && checkbox10.checked && checkbox12.checked)
         && (!checkbox2.checked && !checkbox4.checked && !checkbox6.checked && !checkbox7.checked && !checkbox9.checked && !checkbox11.checked)) {
-        showNextQuestion("divquestion6", "divquestion7");
+        document.getElementById("nextQuestion6").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -396,9 +476,11 @@
       const checkbox2 = document.getElementById("7checkbox2");
 
       if ((checkbox2.checked) && (!checkbox1.checked)) {
-        showNextQuestion("divquestion7", "divquestion8");
+        document.getElementById("nextQuestion7").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -408,9 +490,11 @@
       const checkbox2 = document.getElementById("8checkbox2");
 
       if ((checkbox2.checked) && (!checkbox1.checked)) {
-        showNextQuestion("divquestion8", "divquestion9");
+        document.getElementById("nextQuestion8").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -420,9 +504,11 @@
       const checkbox2 = document.getElementById("9checkbox2");
 
       if ((checkbox2.checked) && (!checkbox1.checked)) {
-        showNextQuestion("divquestion9", "divredirection");
+        document.getElementById("nextQuestion9").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
   </script>

@@ -78,7 +78,13 @@
             Ils ne font pas partie de la même famille.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer1">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer1">Corriger</button>
+        <div id="nextQuestion1" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion1', 'divquestion2')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 2 question -->
@@ -104,7 +110,19 @@
             Leurs parents.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer2">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer2">Corriger</button>
+        <div id="nextQuestion2" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion2', 'divquestion3')">
+            Suivant
+          </button>
+        </div>
+        <div id="nextQuestion2" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion2', 'divquestion3')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 3 question -->
@@ -148,7 +166,13 @@
             Des savoirs et des valeurs.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer3">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer3">Corriger</button>
+        <div id="nextQuestion3" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion3', 'divquestion4')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 4 question -->
@@ -187,14 +211,20 @@
             En discutant avec les adultes.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer4">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer4">Corriger</button>
+        <div id="nextQuestion4" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion4', 'divquestion5')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 5 question -->
       <div id="divquestion5" style="display: none;">
         <p id="question4">
           Doc5) Le groupe de pairs peut-il transmettre des normes et des valeurs différentes de ceux transmis par les
-          adultes (famille, enseignants...) ? Donnez un exemple à partir de votre expérience ?
+          adultes (famille, enseignants...) ?
         </p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="1" id="5checkbox1">
@@ -208,7 +238,13 @@
             Non.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer5">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer5">Corriger</button>
+        <div id="nextQuestion5" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion5', 'divquestion6')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 6 question -->
@@ -228,7 +264,13 @@
             Verticale.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer6">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer6">Corriger</button>
+        <div id="nextQuestion6" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion6', 'divquestion7')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 7 question -->
@@ -261,7 +303,13 @@
           </tr>
         </table>
 
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer7">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer7">Corriger</button>
+        <div id="nextQuestion7" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion7', 'divquestion8')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 8 question -->
@@ -281,7 +329,13 @@
             Non, la transmission des normes et des valeurs n'est pas le but premier du groupe de pairs.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer8">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer8">Corriger</button>
+        <div id="nextQuestion8" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion8', 'divquestion9')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 9 question -->
@@ -304,7 +358,13 @@
             de valeur.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer9">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer9">Corriger</button>
+        <div id="nextQuestion9" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion9', 'divquestion10')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 10 question -->
@@ -342,7 +402,14 @@
             Frère et soeurs.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer10">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+          id="submitAnswer10">Corriger</button>
+        <div id="nextQuestion10" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion10', 'divquestion11')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 11 question -->
@@ -374,7 +441,14 @@
             Se conformer aux normes sociales de leur groupe.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer11">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+          id="submitAnswer11">Corriger</button>
+        <div id="nextQuestion11" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion11', 'divquestion12')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 12 question -->
@@ -395,7 +469,14 @@
             Non.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer12">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+          id="submitAnswer12">Corriger</button>
+        <div id="nextQuestion12" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion12', 'divquestion13')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 13 question -->
@@ -404,7 +485,14 @@
           Quelle est la valeur se développe lors de ces séances de shopping chez les jeunes ?
         </p>
         <input type="text" id="answer13" class="form-control">
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer13">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+          id="submitAnswer13">Corriger</button>
+        <div id="nextQuestion13" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion13', 'divredirection')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- Redirection vers l'instance suivante -->
@@ -415,6 +503,17 @@
       </div>
 
     </div>
+
+    <!-- Erreur -->
+    <div id="wrongAnswerMessage" class="alert alert-danger" style="display: none;">
+      Mauvaise réponse.
+    </div>
+
+    <!-- Validé -->
+    <div id="goodAnswerMessage" class="alert alert-success" style="display: none;">
+      Bonne réponse ! Copiez la dans le polycopié.
+    </div>
+
   </div>
 
   <!-- Bootstrap JS -->
@@ -430,6 +529,8 @@
     function showNextQuestion(currentQuestionId, nextQuestionId) {
       document.getElementById(currentQuestionId).style.display = "none";
       document.getElementById(nextQuestionId).style.display = "block";
+      document.getElementById("wrongAnswerMessage").style.display = "none";
+      document.getElementById("goodAnswerMessage").style.display = "none";
     }
 
     // Événement pour la soumission de la première question
@@ -445,9 +546,11 @@
 
       if ((checkbox2.checked && checkbox4.checked && checkbox8.checked && checkbox6.checked)
         && (!checkbox1.checked && !checkbox3.checked && !checkbox7.checked && !checkbox5.checked)) {
-        showNextQuestion("divquestion1", "divquestion2");
+        document.getElementById("nextQuestion1").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -458,25 +561,31 @@
       const checkbox3 = document.getElementById("2checkbox3");
 
       if ((checkbox2.checked) && (!checkbox1.checked && !checkbox3.checked)) {
-        showNextQuestion("divquestion2", "divquestion3");
+        document.getElementById("nextQuestion2").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
     // Événement pour la soumission de la troisième question
     document.getElementById("submitAnswer3").addEventListener("click", function () {
-      const checkbox1 = document.getElementById("4checkbox1");
-      const checkbox2 = document.getElementById("4checkbox2");
-      const checkbox3 = document.getElementById("4checkbox3");
-      const checkbox4 = document.getElementById("4checkbox4");
-      const checkbox5 = document.getElementById("4checkbox5");
-      const checkbox6 = document.getElementById("4checkbox6");
+      const checkbox1 = document.getElementById("3checkbox1");
+      const checkbox2 = document.getElementById("3checkbox2");
+      const checkbox3 = document.getElementById("3checkbox3");
+      const checkbox4 = document.getElementById("3checkbox4");
+      const checkbox5 = document.getElementById("3checkbox5");
+      const checkbox6 = document.getElementById("3checkbox6");
+      console.log("test");
 
-      if ((checkbox1.checked && checkbox3.checked && checkbox5.checked && checkbox6.checked) && (!checkbox2.checked && !checkbox4.checked)) {
-        showNextQuestion("divquestion3", "divquestion4");
+      if ((checkbox1.checked && checkbox3.checked && checkbox5.checked && checkbox6.checked)
+        && (!checkbox2.checked && !checkbox4.checked)) {
+        document.getElementById("nextQuestion3").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("mauvase réponse")
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -489,9 +598,11 @@
       const checkbox5 = document.getElementById("4checkbox5");
 
       if ((checkbox1.checked && checkbox2.checked && checkbox3.checked) && (!checkbox4.checked && !checkbox5.checked)) {
-        showNextQuestion("divquestion4", "divquestion5");
+        document.getElementById("nextQuestion4").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -501,9 +612,11 @@
       const checkbox2 = document.getElementById("5checkbox2");
 
       if ((checkbox1.checked) && (!checkbox2.checked)) {
-        showNextQuestion("divquestion5", "divquestion6");
+        document.getElementById("nextQuestion5").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -513,9 +626,11 @@
       const checkbox2 = document.getElementById("6checkbox2");
 
       if ((checkbox1.checked) && (!checkbox2.checked)) {
-        showNextQuestion("divquestion6", "divquestion7");
+        document.getElementById("nextQuestion6").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -533,9 +648,11 @@
 
       if ((checkbox3.checked && checkbox4.checked && checkbox5.checked && checkbox6.checked)
         && (!checkbox1.checked && !checkbox2.checked && !checkbox7.checked && !checkbox8.checked)) {
-        showNextQuestion("divquestion7", "divquestion8");
+        document.getElementById("nextQuestion7").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -545,9 +662,11 @@
       const checkbox2 = document.getElementById("8checkbox2");
 
       if ((checkbox2.checked) && (!checkbox1.checked)) {
-        showNextQuestion("divquestion8", "divquestion9");
+        document.getElementById("nextQuestion8").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -557,9 +676,11 @@
       const checkbox2 = document.getElementById("9checkbox2");
 
       if ((checkbox2.checked) && (!checkbox1.checked)) {
-        showNextQuestion("divquestion9", "divquestion10");
+        document.getElementById("nextQuestion9").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -572,9 +693,11 @@
       const checkbox5 = document.getElementById("10checkbox5");
 
       if ((checkbox2.checked) && (!checkbox1.checked && !checkbox3.checked && !checkbox4.checked && !checkbox5.checked)) {
-        showNextQuestion("divquestion10", "divquestion11");
+        document.getElementById("nextQuestion10").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -585,10 +708,13 @@
       const checkbox3 = document.getElementById("11checkbox3");
       const checkbox4 = document.getElementById("11checkbox4");
 
-      if ((checkbox1.checked && checkbox3.checked && checkbox4.checked) && (!checkbox2.checked)) {
-        showNextQuestion("divquestion11", "divquestion12");
+      if ((checkbox1.checked && checkbox3.checked && checkbox4.checked)
+        && (!checkbox2.checked)) {
+        document.getElementById("nextQuestion11").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -598,9 +724,11 @@
       const checkbox2 = document.getElementById("12checkbox2");
 
       if ((checkbox1.checked) && (!checkbox2.checked)) {
-        showNextQuestion("divquestion12", "divquestion13");
+        document.getElementById("nextQuestion12").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -609,9 +737,11 @@
       const userAnswer = document.getElementById("answer13").value;
 
       if (userAnswer.match("autonomie").length) {
-        showNextQuestion("divquestion13", "divredirection");
+        document.getElementById("nextQuestion13").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
   </script>

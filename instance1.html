@@ -66,8 +66,15 @@
             Elle se charge d'un travail de jugement sur tous les domaines de la vie sociale.
           </label>
         </div>
-        <div class="text-center">
-          <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer1">Corriger</button>
+        <div>
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            id="submitAnswer1">Corriger</button>
+        </div>
+        <div id="nextQuestion1" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion1', 'divquestion2')">
+            Suivant
+          </button>
         </div>
       </div>
 
@@ -77,7 +84,16 @@
           Doc 1) Selon Emile Durkheim, jusqu'où le rôle de la famille peut-il s'étendre ? (4 activités)
         </p>
         <input type="text" id="answer1" class="form-control">
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer2">Corriger</button>
+        <div>
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            id="submitAnswer2">Corriger</button>
+        </div>
+        <div id="nextQuestion2" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion2', 'divquestion3')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 3 question -->
@@ -109,7 +125,13 @@
             Voter pour un parti politique spécifique.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer3">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2" id="submitAnswer3">Corriger</button>
+        <div id="nextQuestion3" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion3', 'divquestion4')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 4 question -->
@@ -141,7 +163,13 @@
             Voter pour un parti politique spécifique.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer4">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2" id="submitAnswer4">Corriger</button>
+        <div id="nextQuestion4" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion4', 'divquestion5')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 5 question -->
@@ -173,7 +201,13 @@
             Voter pour un parti politique spécifique.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer5">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2" id="submitAnswer5">Corriger</button>
+        <div id="nextQuestion5" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion5', 'divquestion6')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 6 question -->
@@ -205,7 +239,13 @@
             Voter pour un parti politique spécifique.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer6">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2" id="submitAnswer6">Corriger</button>
+        <div id="nextQuestion6" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion6', 'divquestion7')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 7 question -->
@@ -225,7 +265,13 @@
           <label class="form-check-label" for="7checkbox2">
             Non.
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer7">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2" id="submitAnswer7">Corriger</button>
+        <div id="nextQuestion7" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion7', 'divquestion8')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 8 question -->
@@ -257,7 +303,13 @@
             Depuis la rentrée de 2019, l'école est devenue obligatoire dès l'âge de 3 ans.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer8">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2" id="submitAnswer8">Corriger</button>
+        <div id="nextQuestion8" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion8', 'divquestion9')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 9 question -->
@@ -285,7 +337,13 @@
             Selon l'ENEF, en 2007, 23% des enfants partagent les préférences politiques de gauche de leurs parents.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer9">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2" id="submitAnswer9">Corriger</button>
+        <div id="nextQuestion9" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion9', 'divquestion10')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 10 question -->
@@ -313,7 +371,14 @@
             Selon l'ENEF, en 2007, 29% des enfants partagent les préférences politiques de gauche de leurs parents.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer10">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2"
+          id="submitAnswer10">Corriger</button>
+        <div id="nextQuestion10" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion10', 'divquestion11')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 11 question -->
@@ -350,7 +415,14 @@
             leurs parents.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer11">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2"
+          id="submitAnswer11">Corriger</button>
+        <div id="nextQuestion11" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion11', 'divquestion12')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 12 question -->
@@ -380,13 +452,20 @@
             leurs parents ou orientation difficilement identifiable.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer12">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2"
+          id="submitAnswer12">Corriger</button>
+        <div id="nextQuestion12" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion12', 'divquestion13')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- 13 question -->
       <div id="divquestion13" style="display: none;">
         <p id="question13">
-          Doc2) Selon vous, comment la famille transmet-elle ces préférences politiques aux enfants ? .
+          Doc2) Selon vous, comment la famille transmet-elle ces préférences politiques aux enfants ?
         </p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="1" id="13checkbox1">
@@ -406,38 +485,34 @@
             En incitant à regarder des émissions politiques à la télévision.
           </label>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer13">Corriger</button>
+        <button type="button" class="btn btn-outline-primary btn-lg btn-block my-2"
+          id="submitAnswer13">Corriger</button>
+        <div id="nextQuestion13" style="display: none;">
+          <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
+            onclick="showNextQuestion('divquestion13', 'divredirection')">
+            Suivant
+          </button>
+        </div>
       </div>
 
       <!-- Redirection vers l'instance suivante -->
       <div id="divredirection" style="display: none;">
         <p id="redirection">Passer à l'instance suivante: <b>Partie 2 : L'école, lieu de socialisation</b></p>
-        <a href="instance2.html" class="btn btn-outline-primary btn-lg">Instance 2</a>
+        <a href="instance2.html" class="btn btn-outline-primary btn-lg my-2 btn-block">Instance 2</a>
       </div>
 
     </div>
-  </div>
 
-  <!-- Modale d'aide -->
-  <div class="modal fade" id="hintModal" tabindex="-1" role="dialog" aria-labelledby="hintModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="hintModalLabel">Indice</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <!-- Message d'aide -->
-          <p>Voici un indice pour répondre à la question.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-        </div>
-      </div>
+    <!-- Erreur -->
+    <div id="wrongAnswerMessage" class="alert alert-danger" style="display: none;">
+      Mauvaise réponse.
     </div>
+
+    <!-- Validé -->
+    <div id="goodAnswerMessage" class="alert alert-success" style="display: none;">
+      Bonne réponse ! Copiez la dans le polycopié.
+    </div>
+
   </div>
 
   <!-- Bootstrap JS -->
@@ -453,6 +528,8 @@
     function showNextQuestion(currentQuestionId, nextQuestionId) {
       document.getElementById(currentQuestionId).style.display = "none";
       document.getElementById(nextQuestionId).style.display = "block";
+      document.getElementById("wrongAnswerMessage").style.display = "none";
+      document.getElementById("goodAnswerMessage").style.display = "none";
     }
 
     // Événement pour la soumission de la première question
@@ -465,9 +542,11 @@
       const checkbox6 = document.getElementById("1checkbox6");
 
       if ((checkbox2.checked && checkbox4.checked && checkbox5.checked && checkbox6.checked) && (!checkbox1.checked && !checkbox3.checked)) {
-        showNextQuestion("divquestion1", "divquestion2");
+        document.getElementById("nextQuestion1").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -475,12 +554,14 @@
     document.getElementById("submitAnswer2").addEventListener("click", function () {
       const userAnswer = document.getElementById("answer1").value;
 
-      if (userAnswer.match("économique").length
-        && userAnswer.match("religieuse").length
-        && userAnswer.match("politique").length
-        && userAnswer.match("scientifique").length
+      if (userAnswer.match("économique")
+        && userAnswer.match("religieuse")
+        && userAnswer.match("politique")
+        && userAnswer.match("scientifique")
       ) {
-        showNextQuestion("divquestion2", "divquestion3");
+        document.getElementById("nextQuestion2").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
         alert("mauvase réponse")
       }
@@ -494,9 +575,11 @@
       const checkbox4 = document.getElementById("3checkbox4");
 
       if ((checkbox2.checked) && (!checkbox1.checked && !checkbox3.checked && !checkbox4.checked)) {
-        showNextQuestion("divquestion3", "divquestion4");
+        document.getElementById("nextQuestion3").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -508,9 +591,11 @@
       const checkbox4 = document.getElementById("4checkbox4");
 
       if ((checkbox3.checked) && (!checkbox1.checked && !checkbox2.checked && !checkbox4.checked)) {
-        showNextQuestion("divquestion4", "divquestion5");
+        document.getElementById("nextQuestion4").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -522,9 +607,11 @@
       const checkbox4 = document.getElementById("5checkbox4");
 
       if ((checkbox1.checked) && (!checkbox2.checked && !checkbox3.checked && !checkbox4.checked)) {
-        showNextQuestion("divquestion5", "divquestion6");
+        document.getElementById("nextQuestion5").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -536,9 +623,11 @@
       const checkbox4 = document.getElementById("6checkbox4");
 
       if ((checkbox4.checked) && (!checkbox1.checked && !checkbox3.checked && !checkbox2.checked)) {
-        showNextQuestion("divquestion6", "divquestion7");
+        document.getElementById("nextQuestion6").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -548,9 +637,11 @@
       const checkbox2 = document.getElementById("7checkbox2");
 
       if ((checkbox2.checked) && (!checkbox1.checked)) {
-        showNextQuestion("divquestion7", "divquestion8");
+        document.getElementById("nextQuestion7").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -562,9 +653,11 @@
       const checkbox4 = document.getElementById("8checkbox4");
 
       if ((checkbox1.checked && checkbox2.checked && checkbox3.checked && checkbox4.checked)) {
-        showNextQuestion("divquestion8", "divquestion9");
+        document.getElementById("nextQuestion8").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -575,9 +668,11 @@
       const checkbox3 = document.getElementById("9checkbox3");
 
       if ((checkbox3.checked) && (!checkbox1.checked && !checkbox2.checked)) {
-        showNextQuestion("divquestion9", "divquestion10");
+        document.getElementById("nextQuestion9").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -588,9 +683,11 @@
       const checkbox3 = document.getElementById("10checkbox3");
 
       if ((checkbox3.checked) && (!checkbox1.checked && !checkbox2.checked)) {
-        showNextQuestion("divquestion10", "divquestion11");
+        document.getElementById("nextQuestion10").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -602,9 +699,11 @@
       const checkbox4 = document.getElementById("11checkbox4");
 
       if ((checkbox1.checked) && (!checkbox2.checked && !checkbox3.checked && !checkbox4.checked)) {
-        showNextQuestion("divquestion11", "divquestion12");
+        document.getElementById("nextQuestion11").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -615,9 +714,11 @@
       const checkbox3 = document.getElementById("12checkbox3");
 
       if ((checkbox1.checked) && (!checkbox2.checked && !checkbox3.checked)) {
-        showNextQuestion("divquestion12", "divquestion13");
+        document.getElementById("nextQuestion12").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
 
@@ -628,9 +729,11 @@
       const checkbox3 = document.getElementById("13checkbox3");
 
       if ((checkbox1.checked && checkbox2.checked && checkbox3.checked)) {
-        showNextQuestion("divquestion13", "divredirection");
+        document.getElementById("nextQuestion13").style.display = "block";
+        document.getElementById("wrongAnswerMessage").style.display = "none";
+        document.getElementById("goodAnswerMessage").style.display = "block";
       } else {
-        alert("Mauvaise réponse");
+        document.getElementById("wrongAnswerMessage").style.display = "block";
       }
     });
   </script>
