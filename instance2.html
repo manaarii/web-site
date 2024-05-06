@@ -21,7 +21,7 @@
   </div>
 
   <div class="container overflow-auto mb-3">
-    <h3>Partie 2 : L'école, lieu de socialisation.</h3>
+    <h3><U>Partie 2 : L'école, lieu de socialisation.</U></h3>
 
     <div id="questionContainer">
 
@@ -32,7 +32,7 @@
           scolaire ?
         </p>
         <input type="text" id="answer1" class="form-control">
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer1">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer1">Corriger</button>
       </div>
 
       <!-- 2 question -->
@@ -70,7 +70,7 @@
             Des connaissances académiques.
           </label>
         </div>
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer2">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer2">Corriger</button>
       </div>
 
       <!-- 3 question -->
@@ -114,7 +114,7 @@
             Des savoirs scolaires.
           </label>
         </div>
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer3">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer3">Corriger</button>
       </div>
 
       <!-- 4 question -->
@@ -134,7 +134,7 @@
             Non, il est aussi essentiel dans la vie adulte.
           </label>
         </div>
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer4">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer4">Corriger</button>
       </div>
 
       <!-- 5 question -->
@@ -155,7 +155,7 @@
             groupe de pairs.
           </label>
         </div>
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer5">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer5">Corriger</button>
       </div>
 
       <!-- 6 question -->
@@ -187,7 +187,7 @@
             pour le système éducatif français.
           </label>
         </div>
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer6">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer6">Corriger</button>
       </div>
 
       <!-- 7 question -->
@@ -239,7 +239,7 @@
             objectif principal attendu du système éducatif
           </label>
         </div>
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer7">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer7">Corriger</button>
       </div>
 
       <!-- 8 question -->
@@ -269,7 +269,7 @@
           </label>
         </div>
 
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer8">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer8">Corriger</button>
       </div>
 
       <!-- 9 question -->
@@ -290,7 +290,7 @@
           </label>
         </div>
 
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer9">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer9">Corriger</button>
       </div>
 
       <!-- 10 question -->
@@ -313,13 +313,13 @@
           </label>
         </div>
 
-        <button type="button" class="btn btn-primary mt-2" id="submitAnswer10">Envoyer</button>
+        <button type="button" class="btn btn-outline-primary btn-lg m-2" id="submitAnswer10">Corriger</button>
       </div>
 
       <!-- Redirection vers l'instance suivante -->
       <div id="divredirection" style="display: none;">
         <p id="redirection">Passer à l'instance suivante: </p>
-        <a href="instance1.html" class="btn btn-outline-primary btn-lg">Instance 3</a>
+        <a href="instance3.html" class="btn btn-outline-primary btn-lg">Instance 3</a>
       </div>
 
     </div>
@@ -336,7 +336,11 @@
     document.getElementById("submitAnswer1").addEventListener("click", function () {
       const userAnswer = document.getElementById("answer1").value;
 
-      if (userAnswer == "un apprentissage de savoir explicite, un apprentissage de savoir implicite et un apprentissage soit aux marges de l'institution ou contre elle-même") {
+      if (userAnswer.match("savoir explicite").length
+        && userAnswer.match("savoir implicite").length
+        && userAnswer.match("marges de l'institution").length
+        && userAnswer.match("contre elle-même").length
+      ) {
         showNextQuestion("divquestion1", "divquestion2");
       } else {
         alert("mauvase réponse")
