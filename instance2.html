@@ -28,10 +28,26 @@
       <!-- 1 question -->
       <div id="divquestion1">
         <p id="question1">
-          Doc3) Quels sont les trois grands types d'apprentissage dispensés au cours de la socialisation
-          scolaire ?
+          Doc3) Cochez les cases correspondantes aux apprentissages dispensés au cours de la socialisation scolaire.
         </p>
-        <input type="text" id="answer1" class="form-control">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1" id="1checkbox1">
+          <label class="form-check-label" for="1checkbox1">
+            Un apprentissage de savoir explicite.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="2" id="1checkbox2">
+          <label class="form-check-label" for="1checkbox2">
+            Un apprentissage de savoir implicite.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="3" id="1checkbox3">
+          <label class="form-check-label" for="1checkbox3">
+            Un apprentissage aux marges de l'institution ou contre elle-même.
+          </label>
+        </div>
         <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block" id="submitAnswer1">Corriger</button>
         <div id="nextQuestion1" style="display: none;">
           <button type="button" class="btn btn-outline-primary btn-lg my-2 btn-block"
@@ -407,13 +423,11 @@
 
     // Événement pour la soumission de la première question
     document.getElementById("submitAnswer1").addEventListener("click", function () {
-      const userAnswer = document.getElementById("answer1").value;
+      const checkbox1 = document.getElementById("1checkbox1");
+      const checkbox2 = document.getElementById("1checkbox2");
+      const checkbox3 = document.getElementById("1checkbox3");
 
-      if (userAnswer.match("savoir explicite")
-        && userAnswer.match("savoir implicite")
-        && userAnswer.match("marges de l'institution")
-        && userAnswer.match("contre elle-même")
-      ) {
+      if (checkbox1.checked && checkbox2.checked && checkbox3.checked) {
         document.getElementById("nextQuestion1").style.display = "block";
         document.getElementById("wrongAnswerMessage").style.display = "none";
         document.getElementById("goodAnswerMessage").style.display = "block";
